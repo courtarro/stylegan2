@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  stylegan2:
+    container_name: stylegan2
+    build: .
+    volumes:
+      - .:/stylegan2
+    user: '1000:1000'
+    #stdin_open: true
+    #tty: true
+    entrypoint: sleep infinity
